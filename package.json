@@ -13,6 +13,7 @@
   "author": "tacrow",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "@material/layout-grid": "^4.0.0",
+    "node-sass": "^4.13.1"
   }
 }

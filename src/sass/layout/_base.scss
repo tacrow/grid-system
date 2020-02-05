@@ -3,6 +3,60 @@
  * layout/base.scss
  */
 
+ .l-main {
+  width: 1040px;
+  margin: 0 auto 40px;
+  transition: all .25s;
+}
+.l-contain-side {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.6rem;
+  row-gap: 1.6em;
+  @media screen and  (max-width: 600px) {
+    display: block;
+  }
+  .l-grid {
+    grid-column-end: span 3;
+  }
+  .l-side {
+    grid-column-end: span 1;
+    @media screen and  (max-width: 600px) {
+      margin-top: 1.6rem;
+    }
+  }
+  .mdc-layout-grid {
+    padding: 0;
+  }
+}
+@media screen and  (max-width: 1040px) {
+  .l-main {
+    width: 100%;
+    padding: 0 4.4rem;
+  }
+}
+@media screen and  (max-width: 360px) {
+  .l-main {
+    padding: 0 1.2rem;
+  }
+}
+
+.l-side {
+  height: 100%;
+  min-height: 7.2rem;
+  background-color: #999;
+}
+
 .l-title {
   padding: 1.6rem;
+}
+
+// demo-grid & demo-cell
+.demo-grid {
+  background: rgba(0,0,0,.2);
+  min-width: 360px;
+}
+.demo-cell {
+  background: rgba(0,0,0,.2);
+  height: 100px;
 }
